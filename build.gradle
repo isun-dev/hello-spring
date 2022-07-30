@@ -16,6 +16,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// 자바는 기본적으로 db와 붙을려면 jdbc가 반드시 있어야 한다.
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	// db 클라이언트
+	runtimeOnly 'com.h2database:h2'
 	// https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc
 	implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '9.4.1.jre11'
 
